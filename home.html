@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> LOAN LENDING PREDICTION</title>
+	<style type="text/css">
+		body{
+			background-image: url("static/im.PNG");
+			background-size: cover;
+		}
+		#div1{
+			height: 450px;
+			width:900px;
+			background-color: black;
+			opacity: 0.9;
+			text-align: center;
+			margin-left:16%;
+			border-radius: 10px;
+			padding-top: 30px;
+		}
+		#menu_{
+			background-color: aqua;
+			color:hotpink;
+			height: 35px;
+			width:100%;
+			border-radius: 15px;
+			text-align: center;
+		}
+		#in{
+			height: 30px;
+			width: 90px;
+			font-size: 16px;
+			background-color: hotpink;
+			margin-top: 30px;
+			color:black;
+
+		}
+
+	</style>
+</head>
+<body >
+	<div id="menu_"><h2>LOAN LENDING PREDICTION</h2><div>
+    <div id="div1">
+    	<form action="http://127.0.0.1:5000/predict_" method="post">
+    		<table cellspacing="20px">
+    			<tr>
+    				<td><b>NO_OF_DEPENDENTS<b></td>
+    				<td><input type="number" name="dep"></td>
+    				<td><b>EDUCATION</b></td>
+    				<td><input type="number" name="edu"></td>
+    			</tr>
+    			<tr>
+    				<td><b>SElF-EMPLOYED</b></td>
+    				<td><input type="number" name="sel"></td>
+    				<td><b>APPLICANT INCOME</b></td>
+    				<td><input type="number" name="inc"></td>
+    			</tr>
+    			<tr>
+    				<td><b>LOAN_AMOUNT</b></td>
+    				<td><input type="number" name="loanam"></td>
+                    <td><b>CREDIT_HISTORY</b></td>
+                    <td><input type="number" name="crehist"></td>
+                </tr>
+                <tr>
+                	<td><b>PROPERTY_AREA</b></td>
+                	<td><input type="number" name="area"></td>
+                </tr>
+    		</table>
+    		<div id="check"><input id="in" type="submit" value="CHECK"></div>
+    	</form>
+    </div>
+</body>
+</html>
